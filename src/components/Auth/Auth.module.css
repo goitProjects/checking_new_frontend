@@ -1,0 +1,63 @@
+@value gray-color from '../../variables.module.css';
+@value dark-blue-color from '../../variables.module.css';
+@value font-stack from '../../variables.module.css';
+@value gray-background-color from '../../variables.module.css';
+@value text-gray-color from '../../variables.module.css';
+
+body {
+  background-color: #fff;
+}
+
+.logo {
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 40px;
+  box-shadow: box-shadow;
+  box-shadow: 2px 3.464px 8px 0px rgba(29, 29, 27, 0.1);
+}
+
+.logo p {
+  color: dark-blue-color;
+  margin: 0;
+  font-weight: 800;
+  font-size: 18px;
+  font-family: font-stack;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  width: 270px;
+  margin: auto;
+}
+
+.nav {
+  color: text-gray-color;
+  font-size: 13px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 400px;
+  }
+
+  .navigation {
+    justify-content: space-around;
+    margin-bottom: 15px;
+  }
+
+  body {
+    background-color: gray-background-color;
+  }
+
+  .logo {
+    box-shadow: none;
+  }
+
+  .logo > p {
+    opacity: 0;
+  }
+}

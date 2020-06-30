@@ -1,0 +1,44 @@
+.statistics__list_header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  color: dark-blue-color;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.statistics__list_header::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -7px;
+  height: 2px;
+  background-color: gray-underline;
+}
+
+.list__header_title {
+  width: 50%;
+  margin: 0;
+}
+
+.list__header_title:nth-child(2) {
+  width: 25%;
+  text-align: center;
+}
+
+.list__header_title:last-child {
+  width: 25%;
+  text-align: right;
+}
+
+@media (min-width: 768px) {
+  .list__header_title {
+    width: 36%;
+  }
+
+  .list__header_title:nth-child(2),
+  .list__header_title:last-child {
+    width: 32%;
+  }
+}

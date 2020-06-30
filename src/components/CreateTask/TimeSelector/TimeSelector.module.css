@@ -1,0 +1,93 @@
+@value variables: '../../../variables.module.css';
+@value text-gray-color, light-gray-color, box-shadow from variables;
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.selectorTitle {
+  display: block;
+  margin-bottom: 10px;
+  font-family: inherit;
+  font-size: 14px;
+  color: text-gray-color;
+}
+
+.selectorContainer {
+  position: relative;
+}
+
+.openListBtn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px 0 10px;
+  width: 150px;
+  height: 40px;
+  font-family: inherit;
+  font-size: 14px;
+  background-color: light-gray-color;
+  box-shadow: box-shadow;
+  border: none;
+  cursor: pointer;
+}
+
+.startHoursListContainer {
+  position: absolute;
+  top: 40px;
+  height: 90px;
+  overflow: auto;
+}
+
+.endHoursListContainer {
+  composes: startHoursListContainer;
+  right: 0;
+}
+
+.timeOptionsList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.timeOptionsItemThin {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 130px;
+  font-size: 12px;
+}
+
+.timeOptionsItemWide {
+  composes: timeOptionsItemThin;
+  width: 150px;
+}
+
+.hourBtn {
+  margin: 0;
+  padding: 0;
+  width: 150px;
+  height: 30px;
+  background-color: light-gray-color;
+  border: none;
+  border-bottom: 1px solid #fff;
+}
+
+.hourBtn:first-child {
+  border-top: 1px solid #fff;
+}
+
+.iconArrow {
+  width: 24px;
+  height: 24px;
+}

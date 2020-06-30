@@ -1,0 +1,37 @@
+.item__name_wrapper {
+  position: relative;
+  width: 50%;
+}
+
+.item__element_color {
+  position: absolute;
+  top: 1%;
+  left: 0px;
+  height: 15px;
+  width: 15px;
+}
+.item__name {
+  margin: 0;
+  margin-left: 25px;
+}
+
+.item__percentage {
+  margin: 0;
+  width: 25%;
+  text-align: center;
+}
+
+.item__completed {
+  composes: item__percentage;
+  text-align: right;
+}
+
+@media (min-width: 768px) {
+  .item__name_wrapper {
+    width: 36%;
+  }
+  .item__percentage,
+  .item__completed {
+    width: 32%;
+  }
+}

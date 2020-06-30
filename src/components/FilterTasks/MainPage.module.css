@@ -1,0 +1,374 @@
+@value variables: '../../variables.module.css';
+@value font-stack, text-gray-color, gray-underline from variables;
+
+.container {
+  font-family: font-stack;
+  width: 100vw;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  padding: 0 0 85px;
+  word-wrap: break-word;
+}
+
+.menu {
+  width: 100vw;
+  height: 250px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+@media (max-width: 767px) {
+  .menu {
+    padding: 20px 0 60px;
+  }
+}
+
+.tasksContainer {
+  width: 90vw;
+}
+
+.taskUl {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90vw;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+.taskList {
+  list-style: none;
+  width: 100vw;
+  max-width: 90vw;
+  margin: 10px 0;
+}
+
+.noTasks {
+  font-size: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  color: #adacacb4;
+}
+
+@media (max-width: 767px) {
+  .noTasks {
+    margin-top: 20%;
+  }
+}
+
+.noTasksTitle {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #adacacb4;
+}
+
+.menuButton {
+  display: flex;
+  justify-content: flex-start;
+  outline: none;
+  border: 1px solid #cdd0d9;
+  width: 70vw;
+  padding: 8px 0 8px 24px;
+  cursor: pointer;
+}
+
+.whiteBg {
+  composes: menuButton;
+  background-color: white;
+}
+
+.grayBg {
+  composes: menuButton;
+  background-color: #f5f7fa;
+}
+
+.menuButtonPict {
+  height: 24px;
+  margin: 0;
+  fill: #cdd0d9;
+  margin-right: 8px;
+}
+
+.menuButtonText {
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0;
+  line-height: 25px;
+  color: text-gray-color;
+  width: max-content;
+}
+
+.menuButton:nth-child(n + 1) {
+  border-bottom: none;
+}
+
+.menuButton:last-child {
+  border: 1px solid #cdd0d9;
+}
+
+.modalWrapper {
+  height: 100%;
+}
+
+.modalMenuBg {
+  background-color: #f5f7fa;
+}
+
+.modalMenu {
+  composes: modalMenuBg;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: calc(100% - 40px);
+}
+
+.toggleButton {
+  outline: none;
+  border: none;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.arrowText {
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0;
+  height: 28px;
+  line-height: 24px;
+  color: text-gray-color;
+}
+
+.arrowSvg {
+  margin: 0;
+  display: none;
+}
+
+.line {
+  display: none;
+}
+
+.arrowContainer {
+  display: flex;
+  align-items: center;
+}
+
+.addTask {
+  width: 57px;
+  height: 57px;
+  border-radius: 50%;
+  border: none;
+  background-color: #ff6b08;
+  font-size: 230%;
+  color: white;
+  position: fixed;
+  right: 18px;
+  bottom: 20px;
+  cursor: pointer;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+}
+
+.addTask:focus {
+  outline: none;
+}
+
+.logoutButton {
+  position: absolute;
+  z-index: 20;
+  top: 370px;
+  outline: none;
+  border: none;
+  color: text-gray-color;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 0;
+  border-bottom: 1px solid text-gray-color;
+  cursor: pointer;
+}
+
+.burgerMenu {
+  width: 100vw;
+  margin: 0 auto;
+  background-color: white;
+  height: 40px;
+  position: sticky;
+  z-index: 200;
+  top: 0;
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    background-color: #f5f7fa;
+    min-height: calc(100vh - 50px);
+  }
+
+  .container {
+    width: 100vw;
+    background-color: #f5f7fa;
+    padding: 22px 0;
+    margin: 0 auto;
+  }
+
+  .tasksContainer {
+    width: 80vw;
+    max-width: 1279px;
+  }
+
+  .taskUl {
+    width: 80vw;
+  }
+
+  .menu {
+    width: 100vw;
+    height: 40px;
+  }
+
+  .arrowContainer {
+    width: 80vw;
+  }
+
+  .arrowSvg {
+    display: block;
+  }
+
+  .arrowText {
+    width: max-content;
+  }
+
+  .line {
+    display: block;
+    width: 100%;
+    border-top: 1px solid #869096;
+    padding-bottom: 5px;
+  }
+
+  .menuButton {
+    display: flex;
+    justify-content: flex-start;
+    outline: none;
+    border: 1px solid #cdd0d9;
+    width: 135px;
+    padding: 6px 0 4px 10px;
+  }
+
+  .menuButton:nth-child(n + 1) {
+    border-right: none;
+    border-bottom: 1px solid #cdd0d9;
+  }
+
+  .menuButton:last-child {
+    border: 1px solid #cdd0d9;
+    padding-left: 14px;
+  }
+
+  .toggleButton {
+    background-color: #f5f7fa;
+  }
+
+  .taskList {
+    width: 39vw;
+    max-width: 767px;
+    margin: 20px 0;
+  }
+}
+
+@media (min-width: 1280px) {
+  .wrapper {
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+  }
+  .wrapper::before {
+    content: '';
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 100%;
+    z-index: 1;
+    box-shadow: 2px 3.464px 8px 0px rgba(29, 29, 27, 0.1);
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+  .tasksContainer {
+    width: 70vw;
+    max-width: 100vw;
+  }
+
+  .addTask {
+    left: 22px;
+    top: 50%;
+    z-index: 2;
+  }
+
+  .arrowContainer {
+    width: 75vw;
+    margin: 0 auto;
+  }
+
+  .arrowContainerOpen {
+    composes: arrowContainer;
+    width: 61vw;
+  }
+
+  .taskUl {
+    justify-content: flex-start;
+    width: 75vw;
+    margin: 0 auto;
+  }
+
+  .taskList {
+    width: 23vw;
+    margin-right: 38px;
+  }
+
+  .taskList:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  .taskListOpen {
+    composes: taskList;
+    width: 29vw;
+  }
+
+  .taskListOpen:nth-child(3n) {
+    margin-right: 38px;
+  }
+
+  .taskListOpen:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .tasksContainerOpen {
+    composes: tasksContainer;
+    margin: 0 auto;
+    padding-left: 40px;
+  }
+
+  .containerOpen {
+    composes: container;
+    max-width: calc(100vw - 480px);
+  }
+
+  .taskUlOpen {
+    composes: taskUl;
+    width: 61vw;
+  }
+}

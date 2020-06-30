@@ -1,0 +1,137 @@
+@value variables: '../../../variables.module.css';
+@value input-gray-color, orange-color, red-color, light-gray-color, gray-underline, box-shadow from variables;
+
+.container {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid gray-underline;
+}
+
+.button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.createRoleForm {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: 320px;
+}
+
+.roleInput {
+  box-sizing: border-box;
+  padding: 0 15px;
+  width: 150px;
+  height: 40px;
+  font-size: 14px;
+  background-color: light-gray-color;
+  box-shadow: box-shadow;
+  border: none;
+  outline: none;
+}
+
+.roleInput::placeholder {
+  font-family: inherit;
+  font-size: 12px;
+  color: input-gray-color;
+}
+
+.roleColorBth {
+  composes: button;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  width: 100px;
+  height: 40px;
+  font-size: 12px;
+  font-family: inherit;
+  box-shadow: box-shadow;
+}
+
+.iconArrow {
+  width: 24px;
+  height: 24px;
+}
+
+.colorPicker {
+  position: absolute;
+  z-index: 3;
+  top: 50px;
+  left: 26px;
+  box-sizing: border-box;
+  padding: 10px 0 0 14px;
+  background-color: #fff;
+  border: 1px solid #aeaeae;
+  border-radius: 5px;
+}
+
+.saveRoleBtn {
+  composes: button;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  box-shadow: box-shadow;
+  background-color: orange-color;
+}
+
+.iconSave {
+  width: 24px;
+  height: 24px;
+  fill: #fff;
+}
+
+.rolesList {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.roleItem {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  padding: 0 10px;
+  font-size: 12px;
+  border: 1px solid gray-underline;
+}
+
+.roleName {
+  display: flex;
+  align-items: center;
+}
+
+.roleItemControls {
+  display: flex;
+}
+
+.deleteBtn {
+  composes: button;
+  padding: 0 2px;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 3px;
+  border: 1px solid gray-underline;
+}
+
+.editBtn {
+  composes: deleteBtn;
+  margin-right: 10px;
+}
+
+.iconEdit,
+.iconDelete {
+  fill: #939393;
+  width: 24px;
+  height: 24px;
+}

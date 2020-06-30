@@ -1,0 +1,129 @@
+@value gray-color from '../../variables.module.css';
+@value dark-blue-color from '../../variables.module.css';
+@value font-stack from '../../variables.module.css';
+@value light-gray-color #f5f7fa from '../../variables.module.css';
+@value input-gray-color from '../../variables.module.css';
+.block {
+  box-shadow: 1px 2px 2px 1px rgb(206, 206, 206);
+}
+
+.headerTask {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  font-family: font-stack;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+.bodyTask {
+  font-family: font-stack;
+  background-color: dark-blue-color;
+  margin: 0;
+  color: white;
+  padding: 5px 18px 5px 10px;
+  min-height: 74px;
+  height: 160px;
+  overflow-y: overlay;
+}
+
+.footerTask {
+  font-family: font-stack;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 10px;
+  color: gray-color;
+  background-color: white;
+}
+
+.role {
+  color: rgb(65, 65, 65);
+  font-weight: 600;
+}
+
+.priorityTask {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  box-shadow: 1px 1.732px 2px 0px rgba(29, 29, 27, 0.15);
+  font-weight: 600;
+}
+
+.title {
+  font-weight: 600;
+  margin: 5px 0;
+  font-size: 16px;
+  color: #eeeceb;
+}
+
+.description {
+  margin: 10px 0;
+  font-size: 14px;
+  color: input-gray-color;
+}
+
+.taskControls {
+  display: flex;
+}
+
+.btnDone,
+.btnEdit,
+.deleteBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2px;
+  padding: 2px;
+  border-radius: 50%;
+  border: none;
+  background-color: light-gray-color;
+  width: 33px;
+  height: 33px;
+  cursor: pointer;
+}
+
+.btnDone {
+  margin-right: 0;
+}
+
+.date {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.span {
+  margin-right: 5px;
+}
+
+.doneBtn {
+  composes: btnDone;
+  background-color: #ddf0eb;
+}
+
+.burnedBtn {
+  composes: btnDone;
+  background-color: #f5e6e6;
+}
+
+.undoneBtn {
+  composes: btnDone;
+  background-color: #f5f7fa;
+}
+
+.doneIcon {
+  fill: #2bad8d;
+}
+
+.burnedIcon {
+  fill: #f25137;
+}
+
+.undoneIcon {
+  fill: #939393;
+}
