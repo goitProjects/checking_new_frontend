@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.97df1e06.chunk.css",
+    "main.js": "/static/js/main.0349706f.chunk.js",
+    "main.js.map": "/static/js/main.0349706f.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.12f4976e.js",
+    "runtime-main.js.map": "/static/js/runtime-main.12f4976e.js.map",
+    "static/css/2.05fc23e7.chunk.css": "/static/css/2.05fc23e7.chunk.css",
+    "static/js/2.4da6b9bd.chunk.js": "/static/js/2.4da6b9bd.chunk.js",
+    "static/js/2.4da6b9bd.chunk.js.map": "/static/js/2.4da6b9bd.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.49a2560da1b8b1560b140992d68012ef.js": "/precache-manifest.49a2560da1b8b1560b140992d68012ef.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.05fc23e7.chunk.css.map": "/static/css/2.05fc23e7.chunk.css.map",
+    "static/css/main.97df1e06.chunk.css.map": "/static/css/main.97df1e06.chunk.css.map",
+    "static/js/2.4da6b9bd.chunk.js.LICENSE.txt": "/static/js/2.4da6b9bd.chunk.js.LICENSE.txt",
+    "static/media/StatisticsChart.module.css": "/static/media/arrow_drop_down-24px.ebe1c3a6.svg",
+    "static/media/icons8-google.svg": "/static/media/icons8-google.81ad048e.svg",
+    "static/media/Login.module.css": "/static/media/imageAuth1.dbfbac12.jpg",
+    "static/media/noTasks.f410acd6.svg": "/static/media/noTasks.f410acd6.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.12f4976e.js",
+    "static/css/2.05fc23e7.chunk.css",
+    "static/js/2.4da6b9bd.chunk.js",
+    "static/css/main.97df1e06.chunk.css",
+    "static/js/main.0349706f.chunk.js"
+  ]
+}

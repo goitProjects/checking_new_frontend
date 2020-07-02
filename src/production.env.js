@@ -1,3 +1,3 @@
 export default {
-  baseUrl: 'https://better-team-checking.herokuapp.com/api/',
+  baseUrl: 'https://checking.goit.co.ua/api/',
 };
