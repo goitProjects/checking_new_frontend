@@ -12,7 +12,7 @@
 
 ## Рабочая ссылка проекта:
 
-### https://better-team-checking.herokuapp.com/
+### https://checking.goit.co.ua/
 
 ## Материалы проекта:
 
@@ -22,6 +22,9 @@
 4. [Ссылка на инструкцию по работе с github](https://docs.google.com/document/d/1y-nMdpPIIP83rbqPYt6kM_KXMC83UPbkbxKqgaHlnfI/edit)
 5. [Реализацию redux store смотреть в redux devtools готового проекта, они в продакшене не отключены](https://better-team-checking.herokuapp.com/)
 6. [Репозиторий фронтенда](https://github.com/goitProjects/checking_new_frontend)
+7. [Схема по которой создан бэкенд](https://drive.google.com/file/d/1pVR1e6jMdLvYnt-3iFJYBSvRof7x93qW/view?usp=sharing)
+8. [Схема по которой создан фронтенд](https://drive.google.com/file/d/1AvK_JMiJcxZ1QqogvAkj_8jVq0nKmGR5/view?usp=sharing)
+9. [Описание общей схемы работы фронтенда и бэкенда](https://drive.google.com/file/d/1ZtR4uzKoDVNwT_-nUWlBKnhFkifGaA1g/view?usp=sharing)
 
 ## Дополнительная информация:
 
